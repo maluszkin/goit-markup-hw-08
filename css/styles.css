@@ -19,6 +19,7 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
+  text-decoration: none;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -44,6 +45,7 @@ body {
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -61,6 +63,7 @@ body {
 .address-tel {
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
@@ -158,11 +161,13 @@ body {
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
   cursor: pointer;
-}
-.portfolio-filter-button-selected {
   background-color: var(--hover-color);
   color: #ffffff;
 }
+/*.portfolio-filter-button-selected {
+  background-color: var(--hover-color);
+  color: #ffffff;
+}*/
 .portfolio-projects-list-name {
   font-weight: 700;
   font-size: 18px;
@@ -190,6 +195,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  text-decoration: none;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff;
