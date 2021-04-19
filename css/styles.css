@@ -15,35 +15,35 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   margin: 0;
   padding: 0;
 }
 ul,
-ol{
+ol {
   margin: 0;
   padding: 0;
 }
-p{
+p {
   padding: 0;
   margin: 0;
 }
-img{
+img {
   display: block;
 }
-.list{
-  list-style:none;
+.list {
+  list-style: none;
 }
-.link{
+.link {
   text-decoration: none;
 }
-.container{
+.container {
   width: 1200px;
   padding: 0 15px;
 }
-.section{
-  padding-top:94px;
-  padding-bottom:94px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 body {
   font-family: var(--main-font);
@@ -72,29 +72,28 @@ body {
 /* ===== END COMPONENT ===== */
 
 /* ===== HEADER ===== */
-.header .container{
+.header .container {
   display: flex;
   align-items: center;
   height: 80px;
-
 }
-header .logo{
+header .logo {
   margin-right: 93px;
 }
-.navigation{
+.navigation {
   display: flex;
 }
-.navigation-list{
+.navigation-list {
   display: flex;
   align-items: center;
 }
-.navigation-list-item:not(:last-child){
+.navigation-list-item:not(:last-child) {
   margin-right: 46px;
 }
-.address-mail{
+.address-mail {
   margin-left: auto;
 }
-.address-tel{
+.address-tel {
   margin-left: 50px;
   margin-right: 12px;
 }
@@ -161,7 +160,7 @@ header .logo{
 .atuty {
   background-color: var(--bg1-color);
 }
-.atuty-list{
+.atuty-list {
   display: flex;
   justify-content: space-between;
 }
@@ -184,7 +183,7 @@ header .logo{
 }
 /* ===== END NASZE ATUTY ===== */
 /* ===== CZYM SIE ZAJMUJEMY ===== */
-.about{
+.about {
   background-color: var(--bg1-color);
 }
 .about .container {
@@ -199,13 +198,13 @@ header .logo{
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.about-list{
+.about-list {
   display: flex;
   justify-content: space-between;
 }
 /* ===== END CZYM SIE ZAJMUJEMY ===== */
 /* ===== NASZ ZESPÓŁ ===== */
-.team{
+.team {
   background-color: var(--bg2-color);
 }
 .team-title {
@@ -216,13 +215,14 @@ header .logo{
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.team-list{
+.team-list {
   display: flex;
   justify-content: space-between;
 }
-.team-list-item{
-  background-color: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.team-list-item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-list-name {
@@ -245,16 +245,16 @@ header .logo{
 }
 /* ===== END NASZ ZESPÓŁ ===== */
 /* ===== PORTFOLIO ===== */
-.portfolio .container{
+.portfolio .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.portfolio-filters-list{
+.portfolio-filters-list {
   display: flex;
   margin-bottom: 50px;
 }
-.portfolio-filters-list-item:not(:last-child){
+.portfolio-filters-list-item:not(:last-child) {
   margin-right: 8px;
 }
 .portfolio-filter-button {
@@ -275,15 +275,15 @@ header .logo{
   background-color: var(--hover-color);
   color: #ffffff;
 }*/
-.portfolio-projects-list{
+.portfolio-projects-list {
   display: flex;
   flex-wrap: wrap;
 }
-.portfolio-projects-list-item:not(:nth-last-of-type(3n+1)){
+.portfolio-projects-list-item:not(:nth-last-of-type(3n + 1)) {
   margin-right: 26px; /*powinno być 30, ale żeby dodać border, musiałem zmienić wartość marginesu*/
 }
-.portfolio-projects-list-item{
-  border: 1px solid #EEEEEE;
+.portfolio-projects-list-item {
+  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 .portfolio-projects-list-name {
@@ -313,13 +313,13 @@ header .logo{
   display: flex;
   flex-direction: column;
 }
-footer .logo{
+footer .logo {
   margin-bottom: 20px;
 }
 .logo-footer {
   color: #ffffff;
 }
-.address-list-item{
+.address-list-item {
   margin-bottom: 9px;
 }
 .address-list-link {
