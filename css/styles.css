@@ -245,12 +245,25 @@ header .logo{
 }
 /* ===== END NASZ ZESPÓŁ ===== */
 /* ===== PORTFOLIO ===== */
+.portfolio .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-filters-list{
+  display: flex;
+  margin-bottom: 50px;
+}
+.portfolio-filters-list-item:not(:last-child){
+  margin-right: 8px;
+}
 .portfolio-filter-button {
   font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.03em;
   background-color: var(--bg2-color);
   color: var(--main-color);
+  padding: 6px 22px 6px 22px;
 }
 .portfolio-filter-button:hover,
 .portfolio-filter-button:focus {
@@ -262,18 +275,33 @@ header .logo{
   background-color: var(--hover-color);
   color: #ffffff;
 }*/
+.portfolio-projects-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-projects-list-item:not(:nth-last-of-type(3n+1)){
+  margin-right: 26px; /*powinno być 30, ale żeby dodać border, musiałem zmienić wartość marginesu*/
+}
+.portfolio-projects-list-item{
+  border: 1px solid #EEEEEE;
+  margin-bottom: 30px;
+}
 .portfolio-projects-list-name {
+  width: 322px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 20px 24px 2px 24px;
 }
 .portfolio-projects-list-type {
+  width: 322px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin: 2px 24px 20px 24px;
 }
 /* ===== END PORTFOLIO ===== */
 
