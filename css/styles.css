@@ -10,6 +10,41 @@
   --bg2-color: #f5f4fa;
   --bg3-color: #2f303a;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol{
+  margin: 0;
+  padding: 0;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+img{
+  display: block;
+}
+.list{
+  list-style:none;
+}
+.link{
+  text-decoration: none;
+}
+.container{
+  width: 1200px;
+  padding: 0 15px;
+}
+.section{
+  padding-top:94px;
+  padding-bottom:94px;
+}
 body {
   font-family: var(--main-font);
   color: var(--main-color);
@@ -19,7 +54,6 @@ body {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  text-decoration: none;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #2196f3;
@@ -29,7 +63,6 @@ body {
   font-size: 16px;
   line-height: 1.875;
   display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -39,13 +72,39 @@ body {
 /* ===== END COMPONENT ===== */
 
 /* ===== HEADER ===== */
+.header .container{
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+}
+header .logo{
+  margin-right: 93px;
+}
+.navigation{
+  display: flex;
+}
+.navigation-list{
+  display: flex;
+  align-items: center;
+}
+.navigation-list-item:not(:last-child){
+  margin-right: 46px;
+}
+.address-mail{
+  margin-left: auto;
+}
+.address-tel{
+  margin-left: 50px;
+  margin-right: 12px;
+}
+
 .logo-header {
   color: var(--main-color);
 }
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
-  text-decoration: none;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -63,7 +122,6 @@ body {
 .address-tel {
   font-weight: 500;
   font-size: 14px;
-  text-decoration: none;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
@@ -73,21 +131,28 @@ body {
 }
 /* ===== END HEADER ===== */
 /* ===== HERO ===== */
-.hero {
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: var(--bg3-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   text-align: center;
+  width: 696px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 .hero-button {
-  width: 200px;
-  height: 50px;
+  padding: 10px 41px 10px 42px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* ===== END HERO ===== */
@@ -96,24 +161,35 @@ body {
 .atuty {
   background-color: var(--bg1-color);
 }
+.atuty-list{
+  display: flex;
+  justify-content: space-between;
+}
 .atuty-list-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: 270px;
+  margin-bottom: 10px;
 }
 .atuty-list-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  text-transform: initial;
   color: var(--secondary-color);
 }
 /* ===== END NASZE ATUTY ===== */
 /* ===== CZYM SIE ZAJMUJEMY ===== */
-.about {
+.about{
   background-color: var(--bg1-color);
+}
+.about .container {
+  display: flex;
+  flex-direction: column;
 }
 .about-title {
   font-weight: 700;
@@ -121,10 +197,15 @@ body {
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.about-list{
+  display: flex;
+  justify-content: space-between;
 }
 /* ===== END CZYM SIE ZAJMUJEMY ===== */
 /* ===== NASZ ZESPÓŁ ===== */
-.team {
+.team{
   background-color: var(--bg2-color);
 }
 .team-title {
@@ -133,6 +214,16 @@ body {
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.team-list{
+  display: flex;
+  justify-content: space-between;
+}
+.team-list-item{
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-name {
   font-weight: 500;
@@ -140,6 +231,8 @@ body {
   line-height: 1.188;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-list-description {
   font-weight: 400;
@@ -148,6 +241,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 /* ===== END NASZ ZESPÓŁ ===== */
 /* ===== PORTFOLIO ===== */
@@ -184,18 +278,27 @@ body {
 /* ===== END PORTFOLIO ===== */
 
 /* ===== FOOTER ===== */
-.footer {
+.footer .container {
   background-color: var(--bg3-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+footer .logo{
+  margin-bottom: 20px;
 }
 .logo-footer {
   color: #ffffff;
+}
+.address-list-item{
+  margin-bottom: 9px;
 }
 .address-list-link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  text-decoration: none;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: #ffffff;

@@ -4,52 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    
     <title>Main page</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="logo" href="./index.html"
+      <div class="container">
+      <a class="logo link" href="./index.html"
         >Web<span class="logo-header">Studio</span></a
       >
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list list">
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Agencja</a>
+            <a class="navigation-list-link link" href="#">Agencja</a>
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="./portfolio.html"
+            <a class="navigation-list-link link" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
           <li class="navigation-list-item">
-            <a class="navigation-list-link" href="#">Kontakt</a>
+            <a class="navigation-list-link link" href="#">Kontakt</a>
           </li>
         </ul>
       </nav>
-      <a class="address-mail" href="mailto:info@devstudio.com"
+      <a class="address-mail link" href="mailto:info@devstudio.com"
         >info@devstudio.com</a
       >
-      <a class="address-tel" href="tel:48111111111">+48 111 111 111</a>
+      <a class="address-tel link" href="tel:48111111111">+48 111 111 111</a>
+      </div>
     </header>
     <main>
       <!--- HERO -->
-      <section>
-        <div class="hero">
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <button class="button hero-button" type="button">Zamów usługe</button>
         </div>
       </section>
       <!-- Nasze atuty -->
-      <section>
-        <div class="atuty">
-          <ul class="atuty-list">
+      <section class="section atuty">
+        <div class="container">
+          <ul class="atuty-list list">
             <li class="atuty-list-item">
               <p class="atuty-list-item">LOREM IPSUM</p>
               <p class="atuty-list-description">
@@ -82,10 +86,10 @@
         </div>
       </section>
       <!-- Czym sie zajmujemy -->
-      <section>
-        <div class="about">
+      <section class="section about">
+        <div class="container">
           <h2 class="about-title">Czym się zajmujemy</h2>
-          <ul class="about-list">
+          <ul class="about-list list">
             <li class="about-list-item">
               <img
                 class="about-list-photo"
@@ -117,10 +121,10 @@
         </div>
       </section>
       <!-- Nasz zespół -->
-      <section>
-        <div class="team">
+      <section class="section team">
+        <div class="container">
           <h2 class="team-title">Nasz zespół</h2>
-          <ul class="team-list">
+          <ul class="team-list list">
             <li class="team-list-item">
               <img
                 class="team-list-photo"
@@ -171,14 +175,15 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <a class="logo" href="./index.html"
+      <div class="container">
+      <a class="logo link" href="./index.html"
         >Web<span class="logo-footer">Studio</span></a
       >
       <address class="address">
-        <ul class="address-list">
+        <ul class="address-list list">
           <li class="address-list-item">
             <a
-              class="address-list-link address-list-place"
+              class="address-list-link address-list-place link"
               href="https://goo.gl/maps/FQcAqEdDzZoYBfhZA"
               target="_blank"
               >m. Warszawa, Aleje Jerozolimskie 21</a
@@ -186,18 +191,19 @@
           </li>
           <li class="address-list-item">
             <a
-              class="address-list-link address-list-mail"
+              class="address-list-link address-list-mail link"
               href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
           <li class="address-list-item">
-            <a class="address-list-link address-list-tel" href="tel:48111111111"
+            <a class="address-list-link address-list-tel link" href="tel:48111111111"
               >+48 111 111 111</a
             >
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
