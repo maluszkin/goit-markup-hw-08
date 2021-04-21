@@ -42,8 +42,16 @@ img {
   padding: 0 15px;
 }
 .section {
+  
   padding-top: 94px;
   padding-bottom: 94px;
+
+}
+.section,
+.section-space{
+  min-width: 1600px;
+  display: flex;
+  justify-content: center;
 }
 body {
   font-family: var(--main-font);
@@ -130,12 +138,14 @@ header .logo {
 }
 /* ===== END HEADER ===== */
 /* ===== HERO ===== */
+
+.hero{
+  background-color: var(--bg3-color);
+}
 .hero .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: var(--bg3-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -157,6 +167,7 @@ header .logo {
 /* ===== END HERO ===== */
 
 /* ===== NASZE ATUTY ===== */
+
 .atuty {
   background-color: var(--bg1-color);
 }
@@ -306,8 +317,11 @@ header .logo {
 /* ===== END PORTFOLIO ===== */
 
 /* ===== FOOTER ===== */
-.footer .container {
+.footer{
   background-color: var(--bg3-color);
+}
+
+.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
