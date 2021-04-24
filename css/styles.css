@@ -84,6 +84,7 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
+  border-bottom: 1px solid #ECECEC;
 }
 header .logo {
   margin-right: 93px;
@@ -143,7 +144,7 @@ header .logo {
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-  url("/images/hero-bg.jpg");
+  url("../images/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
