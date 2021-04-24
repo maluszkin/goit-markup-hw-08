@@ -176,6 +176,7 @@ header .logo {
 
 .atuty {
   background-color: var(--bg1-color);
+  padding-bottom: 0px;
 }
 .atuty-list {
   display: flex;
@@ -300,7 +301,7 @@ header .logo {
   margin-right: 26px; /*powinno być 30, ale żeby dodać border, musiałem zmienić wartość marginesu*/
 }
 .portfolio-projects-list-item {
-  border: 1px solid #eeeeee;
+  border: 1px solid #EEEEEE;
   margin-bottom: 30px;
 }
 .portfolio-projects-list-name {
