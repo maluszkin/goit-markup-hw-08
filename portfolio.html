@@ -43,10 +43,14 @@
             </li>
           </ul>
         </nav>
-        <a class="address-mail link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="address-tel link" href="tel:48111111111">+48 111 111 111</a>
+        <a class="address-mail link" href="mailto:info@devstudio.com">          
+          <svg class="address-mail-icon">
+            <use href="images/sprite.svg#envelope"></use>
+          </svg>info@devstudio.com</a>
+        <a class="address-tel link" href="tel:48111111111">
+          <svg class="address-tel-icon">
+            <use href="images/sprite.svg#smartphone"></use>
+          </svg>+48 111 111 111</a>
       </div>
     </header>
     <!-- Portfolio -->
@@ -196,7 +200,8 @@
     <!-- Footer - COPY PASTE FROM INDEX.HTML-->
     <footer class="footer section-space">
       <div class="container">
-        <a class="logo link" href="./index.html"
+        <div class="footer-address">
+          <a class="logo link" href="./index.html"
           >Web<span class="logo-footer">Studio</span></a
         >
         <address class="address">
@@ -225,6 +230,40 @@
             </li>
           </ul>
         </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social-title">DOŁĄCZ DO NAS</p>
+          <ul class="footer-social-list list">
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="footer-social-icon">
+                  <use href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="team-social-icon">
+                  <use href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="footer-social-icon">
+                  <use href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="footer-social-icon">
+                  <use href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

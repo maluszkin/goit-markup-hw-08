@@ -33,18 +33,21 @@
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+                >Portfolio</a>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-link link" href="#">Kontakt</a>
             </li>
           </ul>
         </nav>
-        <a class="address-mail link" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="address-tel link" href="tel:48111111111">+48 111 111 111</a>
+        <a class="address-mail link" href="mailto:info@devstudio.com">          
+          <svg class="address-mail-icon">
+            <use href="images/sprite.svg#envelope"></use>
+          </svg>info@devstudio.com</a>
+        <a class="address-tel link" href="tel:48111111111">
+          <svg class="address-tel-icon">
+            <use href="images/sprite.svg#smartphone"></use>
+          </svg>+48 111 111 111</a>
       </div>
     </header>
     <main>
@@ -113,7 +116,7 @@
       <!-- Czym sie zajmujemy -->
       <section class="section about">
         <div class="container">
-          <h2 class="about-title">Czym się zajmujemy</h2>
+          <h2 class="about-title title">Czym się zajmujemy</h2>
           <ul class="about-list list">
             <li class="about-list-item">
               <img
@@ -148,7 +151,7 @@
       <!-- Nasz zespół -->
       <section class="section team">
         <div class="container">
-          <h2 class="team-title">Nasz zespół</h2>
+          <h2 class="team-title title">Nasz zespół</h2>
           <ul class="team-list list">
             <li class="team-list-item">
               <img
@@ -317,11 +320,61 @@
           </ul>
         </div>
       </section>
+      <section class="section clients">
+        <div class="container">
+          <h2 class="clients-title title">Nasi klienci</h2>
+          <ul class="clients-list list">
+            <li class="clients-list-item">
+              <a class="clients-list-link link" href="#">
+                <svg class="clients-list-icon">
+                  <use href="images/sprite.svg#client1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-list-link link" href="#">
+                <svg class="clients-list-icon">
+                  <use href="images/sprite.svg#client2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-list-link link" href="#">
+                <svg class="clients-list-icon">
+                  <use href="images/sprite.svg#client3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-list-link link" href="#">
+                <svg class="clients-list-icon">
+                  <use href="images/sprite.svg#client4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-list-link link" href="#">
+                <svg class="clients-list-icon">
+                  <use href="images/sprite.svg#client5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="clients-list-link link" href="#">
+                <svg class="clients-list-icon">
+                  <use href="images/sprite.svg#client6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="footer section-space">
       <div class="container">
-        <a class="logo link" href="./index.html"
+        <div class="footer-address">
+          <a class="logo link" href="./index.html"
           >Web<span class="logo-footer">Studio</span></a
         >
         <address class="address">
@@ -350,6 +403,40 @@
             </li>
           </ul>
         </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social-title">DOŁĄCZ DO NAS</p>
+          <ul class="footer-social-list list">
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="footer-social-icon">
+                  <use href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="team-social-icon">
+                  <use href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="footer-social-icon">
+                  <use href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-list-item">
+              <a class="footer-social-list-link link" href="#">
+                <svg class="footer-social-icon">
+                  <use href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
