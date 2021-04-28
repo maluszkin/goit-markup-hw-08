@@ -468,8 +468,4 @@ footer .logo {
 .footer-social-list-link:focus {
   background-color: var(--hover-color);
 }
-.footer-social-icon {
-  height: 20px;
-  width: 20px;
-}
 /* ========== END FOOTER ========== */
