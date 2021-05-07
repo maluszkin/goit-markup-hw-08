@@ -29,7 +29,7 @@
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="#">Agencja</a>
+              <a class="navigation-list-link link agencja-header" href="./index.html">Agencja</a>
             </li>
             <li class="navigation-list-item">
               <a class="navigation-list-link link" href="./portfolio.html"
@@ -55,7 +55,7 @@
       <section class="hero section-space">
         <div class="container">
           <h1 class="hero-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button hero-button" type="button">Zamów usługe</button>
+          <button class="button hero-button" type="button" data-modal-open>Zamów usługe</button>
         </div>
       </section>
       <!-- Nasze atuty -->
@@ -125,7 +125,10 @@
                 alt="pisanie kodu"
                 width="370"
                 height="294"
-              />
+                />
+              <div class="about-list-photo-description-box">
+                <p class="about-list-photo-description-text">APLIKACJE KOMPUTEROWE</p>
+              </div>
             </li>
             <li class="about-list-item">
               <img
@@ -135,6 +138,9 @@
                 width="370"
                 height="294"
               />
+              <div class="about-list-photo-description-box">
+                <p class="about-list-photo-description-text">APLIKACJE MOBILNE</p>
+              </div>
             </li>
             <li class="about-list-item">
               <img
@@ -144,6 +150,9 @@
                 width="370"
                 height="294"
               />
+              <div class="about-list-photo-description-box">
+                <p class="about-list-photo-description-text">ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -439,5 +448,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn-x" width="18px" height="18px">
+            <use href="images/close-button.svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
