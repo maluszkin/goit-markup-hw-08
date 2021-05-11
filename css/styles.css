@@ -85,6 +85,16 @@ body {
   border-radius: 4px;
   border: none;
 }
+.visually-hidden{
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 /* ========== END COMPONENT ========== */
 
 /* ========== HEADER ========== */
@@ -592,12 +602,87 @@ footer .logo {
   margin-right: 8px;
   cursor: pointer;
 }
-.close-btn-x{
-color: black;
+.modal-form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+}
+.modal-form-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.150;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 8px;
+}
+.modal-label{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--secondary-color);
+}
+.modal-input,
+.modal-textarea{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.policy-link.link{
+  text-decoration: underline;
+  color: var(--hover-color);
 }
 .is-hidden{
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.modal-btn{
+  padding: 10px 41px 10px 42px;
+  margin-top: 30px;
+}
+.modal-checkbox-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.modal-disclaimer-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-checkbox{
+  margin-left: 15px;
+  margin-right: 8px;
+  background: var(--hover-color);
+  border-radius: 2px;
+}
+.modal-label.modal-policy-label{
+  font-size: 14px;
+  line-height: 1.714;
+}
+.modal-policy-label:before{
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #000;
+  
+}
+.modal-checkbox:checked + .modal-policy-label::before{
+  outline: none;
+  background-color: var(--hover-color);
+  background-image: url(../images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* ========== END BACKDROP ========== */

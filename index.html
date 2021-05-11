@@ -451,6 +451,29 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close></button>
+        <form method="post" class="modal-form">
+          <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>
+          
+          <svg class="footer-social-icon" width="12px" height="12px">
+            <use href="images/sprite.svg#facebook"></use>
+          </svg>
+          <label for="name" class="modal-label">Imie</label>
+          <input type="text" class="modal-input" required>
+          
+          <label for="tel" class="modal-label">Telefon</label>
+          <input type="tel" class="modal-input" required>
+          <label for="email" class="modal-label">Email</label>
+          <input type="email" class="modal-input" required>
+          <label for="comment" class="modal-label">Komentarz</label>
+          <textarea name="comment" id="" cols="30" rows="10" class="modal-textarea"></textarea>
+          <div class="modal-checkbox-wrapper">
+            <div class="modal-disclaimer-wrapper">
+              <input type="checkbox" id="checkbox" class="visually-hidden" required>
+              <label for="checkbox" class="modal-label modal-policy-label">Oświadczam iż akceptuję <a href="#" class="policy-link link">Regulamin</a> i <a href="#" class="policy-link link">Politykę Prywatności</a> .</label>
+            </div>
+            <button class="modal-btn button" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/modal.js"></script>
