@@ -635,7 +635,13 @@ footer .logo {
   margin-top: 4px;
   margin-bottom: 10px;
 }
-.policy-link.link{
+.modal-input{
+  height: 40px;
+}
+.modal-textarea{
+  height: 120px;
+}
+.policy-link{
   text-decoration: underline;
   color: var(--hover-color);
 }
@@ -667,6 +673,9 @@ footer .logo {
   border-radius: 2px;
 }
 .modal-label.modal-policy-label{
+  display: block;
+  align-items: center;
+  
   font-size: 14px;
   line-height: 1.714;
 }
@@ -675,14 +684,16 @@ footer .logo {
   content: "";
   width: 16px;
   height: 16px;
-  outline: 1px solid #000;
-  
+  border: 1px solid #000;
+  margin-right: 8px;
+  border-radius: 2px;
 }
 .modal-checkbox:checked + .modal-policy-label::before{
-  outline: none;
+  border: none;
   background-color: var(--hover-color);
   background-image: url(../images/checkbox.svg);
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 /* ========== END BACKDROP ========== */
