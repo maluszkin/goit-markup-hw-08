@@ -451,21 +451,41 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close></button>
-        <form method="post" class="modal-form">
-          <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>
-          
-          <svg class="footer-social-icon" width="12px" height="12px">
-            <use href="images/sprite.svg#facebook"></use>
-          </svg>
+        <div method="post" class="modal-form">
+          <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>          
           <label for="name" class="modal-label">Imie</label>
-          <input type="text" class="modal-input" required>
-          
+          <div class="modal-input-wrapper">
+            <input type="text" class="modal-input" required>
+            <div class="modal-input-icon-wrapper">
+              <svg class="modal-input-icon" width="12px" height="12px">
+                <use href="images/sprite.svg#facebook"></use>
+              </svg>
+            </div>
+          </div>   
+
           <label for="tel" class="modal-label">Telefon</label>
-          <input type="tel" class="modal-input" required>
+
+          <div class="modal-input-wrapper">
+            <input type="tel" class="modal-input" required> 
+            <div class="modal-input-icon-wrapper">     
+              <svg class="modal-input-icon" width="14px" height="14px">
+                <use href="images/sprite.svg#modal-phone"></use>
+              </svg>
+            </div>
+          </div>
+            
+
           <label for="email" class="modal-label">Email</label>
-          <input type="email" class="modal-input" required>
+          <div class="modal-input-wrapper">
+            <input type="email" class="modal-input" required>
+            <div class="modal-input-icon-wrapper">
+              <svg class="modal-input-icon" width="16px" height="12px">
+                <use href="images/sprite.svg#modal-envelope"></use>
+              </svg>
+            </div>
+          </div>
           <label for="comment" class="modal-label">Komentarz</label>
-          <textarea name="comment" id="" cols="30" rows="10" class="modal-textarea"></textarea>
+          <textarea name="comment" id="" cols="30" rows="10" class="modal-textarea" placeholder="Wprowadź tekst"></textarea>
           <div class="modal-checkbox-wrapper">
             <div class="modal-disclaimer-wrapper">
               <input type="checkbox" id="checkbox" class="modal-checkbox visually-hidden" required>
