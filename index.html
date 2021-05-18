@@ -446,38 +446,50 @@
             </li>
           </ul>
         </div>
+
+
+        <div class="footer-form">
+          <p class="footer-form-title">ZAPISZ SIĘ DO NEWSLETTERA</p>
+          <form method="post" class="footer-form-form">
+            <input type="email" class="footer-form-input" name="email" placeholder="E-mail">
+            <button class="footer-btn button" type="submit">Zapisz się
+              <svg class="footer-input-icon" width="24px" height="24px">
+                <use href="images/sprite.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        
       </div>
     </footer>
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close></button>
-        <div method="post" class="modal-form">
+        <form method="post" class="modal-form">
           <h2 class="modal-form-title">Zostaw swoje dane w formularzu poniżej</h2>          
           <label for="name" class="modal-label">Imie</label>
           <div class="modal-input-wrapper">
-            <input type="text" class="modal-input" required>
+            <input type="text" class="modal-input" name="name" required>
             <div class="modal-input-icon-wrapper">
               <svg class="modal-input-icon" width="12px" height="12px">
                 <use href="images/sprite.svg#facebook"></use>
               </svg>
             </div>
           </div>   
-
           <label for="tel" class="modal-label">Telefon</label>
-
           <div class="modal-input-wrapper">
-            <input type="tel" class="modal-input" required> 
+            <input type="tel" class="modal-input" name="telephone" required> 
             <div class="modal-input-icon-wrapper">     
               <svg class="modal-input-icon" width="14px" height="14px">
                 <use href="images/sprite.svg#modal-phone"></use>
               </svg>
             </div>
           </div>
-            
-
           <label for="email" class="modal-label">Email</label>
           <div class="modal-input-wrapper">
-            <input type="email" class="modal-input" required>
+            <input type="email" class="modal-input" name="email" required>
             <div class="modal-input-icon-wrapper">
               <svg class="modal-input-icon" width="16px" height="12px">
                 <use href="images/sprite.svg#modal-envelope"></use>
@@ -488,7 +500,7 @@
           <textarea name="comment" id="" cols="30" rows="10" class="modal-textarea" placeholder="Wprowadź tekst"></textarea>
           <div class="modal-checkbox-wrapper">
             <div class="modal-disclaimer-wrapper">
-              <input type="checkbox" id="checkbox" class="modal-checkbox visually-hidden" required>
+              <input type="checkbox" id="checkbox" name="checkbox" class="modal-checkbox visually-hidden" required>
               <label for="checkbox" class="modal-label modal-policy-label">Oświadczam iż akceptuję <a href="#" class="policy-link link">Regulamin</a> i <a href="#" class="policy-link link">Politykę Prywatności</a>.</label>
             </div>
             <button class="modal-btn button" type="submit">Wyślij</button>

@@ -536,7 +536,8 @@ footer .logo {
   width: 206px;
   margin-top: 12px;
 }
-.footer-social-title {
+.footer-social-title,
+.footer-form-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
@@ -564,6 +565,46 @@ footer .logo {
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
   background-color: var(--hover-color);
+}
+.footer-form{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 78px;
+  flex-wrap: wrap;
+}
+.footer-form-title {
+  display: flex;
+}
+.footer-form-form{
+  display: flex;
+}
+.footer-form-input{
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--bg3-color);
+}
+.footer-btn{
+  position: relative;
+  padding: 10px 76px 10px 42px;
+  fill: #FFFFFF;
+}
+.footer-input-icon{
+  position: absolute;
+  top: 13px;
+  right: 28px;
+}
+.footer-form-input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 /* ========== END FOOTER ========== */
 
@@ -633,7 +674,6 @@ footer .logo {
   margin-bottom: 10px;
   
 } 
-
 .modal-input,
 .modal-textarea{
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -667,8 +707,6 @@ footer .logo {
 .modal-input:focus + .modal-input-icon-wrapper{
   fill: var(--hover-color);
 }
-
-
 .modal-textarea::placeholder{
   font-weight: 400;
   font-size: 12px;
