@@ -567,13 +567,10 @@ footer .logo {
   background-color: var(--hover-color);
 }
 .footer-form{
-  display: flex;
-  align-items: flex-start;
   margin-left: 78px;
-  flex-wrap: wrap;
 }
 .footer-form-title {
-  display: flex;
+  
 }
 .footer-form-form{
   display: flex;
@@ -587,6 +584,8 @@ footer .logo {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--bg3-color);
+  color: #FFFFFF;
+  padding-left: 16px;
 }
 .footer-btn{
   position: relative;
@@ -595,8 +594,9 @@ footer .logo {
 }
 .footer-input-icon{
   position: absolute;
-  top: 13px;
+  top: 50%;
   right: 28px;
+  transform: translateY(-50%) ;
 }
 .footer-form-input::placeholder{
   font-weight: 400;
@@ -604,7 +604,10 @@ footer .logo {
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+}
+.footer-form-input:focus{
+  outline: none;
+  border-color: var(--hover-color);
 }
 /* ========== END FOOTER ========== */
 
