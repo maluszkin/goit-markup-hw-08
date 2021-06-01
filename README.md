@@ -1,2 +1,2 @@
-# Praca domowa GOIT HTML+CSS #6
-https://maluszkin.github.io/goit-markup-hw-06/
+# Praca domowa GOIT HTML+CSS #7
+https://maluszkin.github.io/goit-markup-hw-07/
