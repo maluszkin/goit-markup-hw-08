@@ -1,0 +1,10 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section,
+.section-space {
+    min-width: 1600px;
+    display: flex;
+    justify-content: center;
+}

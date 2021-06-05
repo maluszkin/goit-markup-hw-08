@@ -1,0 +1,35 @@
+.about {
+    background-color: var(--bg1-color);
+  }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-list-item {
+    position: relative;
+  }
+  .about-list-photo-description-box {
+    position: absolute;
+    bottom: 0;
+  
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .about-list-photo-description-text {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }

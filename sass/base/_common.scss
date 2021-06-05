@@ -1,0 +1,44 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --hover-color: #2196f3;
+
+  --bg1-color: #ffffff;
+  --bg2-color: #f5f4fa;
+  --bg3-color: #2f303a;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+    font-family: var(--main-font);
+    color: var(--main-color);
+  }
