@@ -1,19 +1,21 @@
 .footer {
     background-color: var(--bg3-color);
+
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      display: flex;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    &__address {
+      display: flex;
+      flex-direction: column;
+      margin-right: 70px;
+    }
   }
-  .footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
-  }
-  .footer__address {
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-  }
-  footer .logo {
-    margin-bottom: 20px;
-  }
+
   .address__list--item {
     margin-bottom: 9px;
   }
@@ -24,19 +26,17 @@
     letter-spacing: 0.03em;
     color: #ffffff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      color: var(--hover-color);
+    }
   }
   .address__list--mail,
   .address__list--tel {
     opacity: 0.6;
   }
-  .address__list--link:hover,
-  .address__list--link:focus {
-    color: var(--hover-color);
-  }
-  .footer-social {
-    width: 206px;
-    margin-top: 12px;
-  }
+
   .footer-social__title,
   .footer-form__title {
     font-weight: 700;
@@ -47,63 +47,73 @@
     color: #ffffff;
     margin-bottom: 20px;
   }
-  .footer-social__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .footer-social {
+    width: 206px;
+    margin-top: 12px;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__list--link {
+      display: flex;
+      height: 44px;
+      width: 44px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      fill: #ffffff;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: var(--hover-color);
+      }
+    }
   }
-  .footer-social__list--link {
-    display: flex;
-    height: 44px;
-    width: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    fill: #ffffff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer-social__list--link:hover,
-  .footer-social__list--link:focus {
-    background-color: var(--hover-color);
-  }
+
   .footer-form{
     margin-left: 78px;
+
+    &__form{
+      display: flex;
+    }
+    &__form--input{
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: var(--bg3-color);
+      color: #FFFFFF;
+      padding-left: 16px;
+  
+      &::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      &:focus{
+        outline: none;
+        border-color: var(--hover-color);
+      }
+    }
+    &__form--btn{
+      position: relative;
+      padding: 10px 76px 10px 42px;
+      fill: #FFFFFF;
+    }
+    &__form--input-icon{
+      position: absolute;
+      top: 50%;
+      right: 28px;
+      transform: translateY(-50%) ;
+    }
   }
-  .footer-form__form{
-    display: flex;
-  }
-  .footer-form__form--input{
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: var(--bg3-color);
-    color: #FFFFFF;
-    padding-left: 16px;
-  }
-  .footer-form__form--btn{
-    position: relative;
-    padding: 10px 76px 10px 42px;
-    fill: #FFFFFF;
-  }
-  .footer-form__form--input-icon{
-    position: absolute;
-    top: 50%;
-    right: 28px;
-    transform: translateY(-50%) ;
-  }
-  .footer-form__form--input::placeholder{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .footer-form__form--input:focus{
-    outline: none;
-    border-color: var(--hover-color);
-  }
+

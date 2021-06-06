@@ -1,9 +1,10 @@
 .portfolio-filters__list {
     display: flex;
     margin-bottom: 50px;
-  }
-  .portfolio-filters__list--item:not(:last-child) {
-    margin-right: 8px;
+
+    &--item:not(:last-child) {
+      margin-right: 8px;
+    }
   }
   .portfolio-filters__button {
     font-weight: 500;
@@ -13,13 +14,15 @@
     color: var(--main-color);
     padding: 6px 22px 6px 22px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--hover-color);
+      color: #ffffff;
+    }
   }
-  .portfolio-filters__button:hover,
-  .portfolio-filters__button:focus {
-    cursor: pointer;
-    background-color: var(--hover-color);
-    color: #ffffff;
-  }
+
   /*.portfolio-filter-button-selected {
     background-color: var(--hover-color);
     color: #ffffff;
