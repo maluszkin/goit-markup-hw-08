@@ -6,7 +6,7 @@
     padding-bottom: 60px;
     display: flex;
   }
-  .footer-address {
+  .footer__address {
     display: flex;
     flex-direction: column;
     margin-right: 70px;
@@ -14,13 +14,10 @@
   footer .logo {
     margin-bottom: 20px;
   }
-  .logo-footer {
-    color: #ffffff;
-  }
-  .address-list-item {
+  .address__list--item {
     margin-bottom: 9px;
   }
-  .address-list-link {
+  .address__list--link {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.714;
@@ -28,20 +25,20 @@
     color: #ffffff;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .address-list-mail,
-  .address-list-tel {
+  .address__list--mail,
+  .address__list--tel {
     opacity: 0.6;
   }
-  .address-list-link:hover,
-  .address-list-link:focus {
+  .address__list--link:hover,
+  .address__list--link:focus {
     color: var(--hover-color);
   }
   .footer-social {
     width: 206px;
     margin-top: 12px;
   }
-  .footer-social-title,
-  .footer-form-title {
+  .footer-social__title,
+  .footer-form__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.172;
@@ -50,12 +47,12 @@
     color: #ffffff;
     margin-bottom: 20px;
   }
-  .footer-social-list {
+  .footer-social__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .footer-social-list-link {
+  .footer-social__list--link {
     display: flex;
     height: 44px;
     width: 44px;
@@ -66,20 +63,17 @@
     fill: #ffffff;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer-social-list-link:hover,
-  .footer-social-list-link:focus {
+  .footer-social__list--link:hover,
+  .footer-social__list--link:focus {
     background-color: var(--hover-color);
   }
   .footer-form{
     margin-left: 78px;
   }
-  .footer-form-title {
-    
-  }
-  .footer-form-form{
+  .footer-form__form{
     display: flex;
   }
-  .footer-form-input{
+  .footer-form__form--input{
     width: 358px;
     height: 50px;
     margin-right: 12px;
@@ -91,25 +85,25 @@
     color: #FFFFFF;
     padding-left: 16px;
   }
-  .footer-btn{
+  .footer-form__form--btn{
     position: relative;
     padding: 10px 76px 10px 42px;
     fill: #FFFFFF;
   }
-  .footer-input-icon{
+  .footer-form__form--input-icon{
     position: absolute;
     top: 50%;
     right: 28px;
     transform: translateY(-50%) ;
   }
-  .footer-form-input::placeholder{
+  .footer-form__form--input::placeholder{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: rgba(255, 255, 255, 0.6);
   }
-  .footer-form-input:focus{
+  .footer-form__form--input:focus{
     outline: none;
     border-color: var(--hover-color);
   }

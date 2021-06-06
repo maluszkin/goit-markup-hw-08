@@ -11,14 +11,14 @@
   .navigation {
     display: flex;
   }
-  .navigation-list {
+  .navigation__list {
     display: flex;
     align-items: center;
   }
-  .navigation-list-item:not(:last-child) {
+  .navigation__list--item:not(:last-child) {
     margin-right: 46px;
   }
-  .navigation-list-link {
+  .navigation__list--link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -26,58 +26,56 @@
     color: var(--main-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .address-mail {
+  .address__mail {
     margin-left: auto;
   }
-  .address-tel {
+  .address__tel {
     margin-left: 50px;
     margin-right: 12px;
   }
-  .address-mail,
-  .address-tel {
+  .address__mail,
+  .address__tel {
     color: var(--secondary-color);
     fill: var(--secondary-color);
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .address-mail-icon {
+  .address__mail--icon {
     width: 16px;
     height: 12px;
   }
-  .address-tel-icon {
+  .address__tel--icon {
     width: 10px;
     height: 16px;
   }
-  .address-mail-icon,
-  .address-tel-icon {
+  .address__mail--icon,
+  .address__tel--icon {
     margin-right: 10px;
   }
-  .logo-header {
-    color: var(--main-color);
-  }
-  .navigation-list-link:hover,
-  .navigation-list-link:focus,
-  .address-mail:hover,
-  .address-tel:hover,
-  .address-mail:focus,
-  .address-tel:focus {
+
+  .navigation__list--link:hover,
+  .navigation__list--link:focus,
+  .address__mail:hover,
+  .address__tel:hover,
+  .address__mail:focus,
+  .address__tel:focus {
     color: var(--hover-color);
     cursor: pointer;
     fill: var(--hover-color);
   }
-  .address-mail,
-  .address-tel {
+  .address__mail,
+  .address__tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
   }
-  .portfolio-header {
+  .portfolio__header {
     color: var(--hover-color);
   }
-  .portfolio-header::after{
+  .portfolio__header::after{
     position: absolute;
     bottom: 0;
     content:"";
@@ -87,10 +85,10 @@
     background-color: var(--hover-color);
     border-radius: 2px;
   }
-  .agencja-header{
+  .agencja__header{
     color: var(--hover-color);
   }
-  .agencja-header::after{
+  .agencja__header::after{
     position: absolute;
     bottom: 0;
     content:"";
