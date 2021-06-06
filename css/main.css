@@ -60,23 +60,75 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 60px 15px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/*
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+/*
 .section,
 .section-space {
-  min-width: 1600px;
-  display: flex;
-  justify-content: center;
+    
+    display: flex;
+    justify-content: center;
 }
 
+*/
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -405,8 +457,8 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
-  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-hero-bg.jpg");
+  background-size: 480px 400px;
   background-repeat: no-repeat;
 }
 
@@ -414,16 +466,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
-  width: 696px;
+  width: 480px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -436,6 +486,44 @@ body {
   cursor: pointer;
 }
 
+/*
+
+.hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+
+    &__title {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.364;
+      text-align: center;
+      width: 696px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    &__button {
+      padding: 10px 41px 10px 42px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+  }
+
+*/
 .advs {
   background-color: var(--bg1-color);
   padding-bottom: 0px;

@@ -1,26 +1,26 @@
-@import "/utils/visually-hidden";
-@import "/utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/variables";
 
-@import "/base/common";
-@import "/base/container";
-@import "/base/section";
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
 
-@import "/components/button";
-@import "/components/logo";
-@import "/components/title";
-@import "/components/backdrop";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/backdrop";
 
-@import "/layout/header";
-@import "/layout/hero";
-@import "/layout/advantages";
-@import "/layout/about";
-@import "/layout/team";
-@import "/layout/clients";
-@import "/layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
 
-@import "/pages/portfolio";
-@import "/pages/portfolio-filters";
-@import "/pages/portfolio-projects";
+@import "./pages/portfolio";
+@import "./pages/portfolio-filters";
+@import "./pages/portfolio-projects";
 
 
 
