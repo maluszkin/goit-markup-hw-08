@@ -745,16 +745,16 @@ footer .logo {
   align-items: center;
 }
 
-.portfolio-filters-list {
+.portfolio-filters__list {
   display: flex;
   margin-bottom: 50px;
 }
 
-.portfolio-filters-list-item:not(:last-child) {
+.portfolio-filters__list--item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-filter-button {
+.portfolio-filters__button {
   font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.03em;
@@ -764,8 +764,8 @@ footer .logo {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-filter-button:hover,
-.portfolio-filter-button:focus {
+.portfolio-filters__button:hover,
+.portfolio-filters__button:focus {
   cursor: pointer;
   background-color: var(--hover-color);
   color: #ffffff;
@@ -775,17 +775,17 @@ footer .logo {
     background-color: var(--hover-color);
     color: #ffffff;
   }*/
-.portfolio-projects-list {
+.portfolio-projects__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-projects-list-item:not(:nth-last-of-type(3n + 1)) {
+.portfolio-projects__list--item:not(:nth-last-of-type(3n + 1)) {
   margin-right: 26px;
   /*powinno być 30, ale żeby dodać border, musiałem zmienić wartość marginesu */
 }
 
-.portfolio-projects-list-item {
+.portfolio-projects__list--item {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   position: relative;
@@ -793,13 +793,13 @@ footer .logo {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-projects-list-item:hover {
+.portfolio-projects__list--item:hover {
   border: 1px solid #ffffff;
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-projects-list-name {
+.portfolio-projects__list--name {
   color: var(--main-color);
   width: 322px;
   font-weight: 700;
@@ -809,7 +809,7 @@ footer .logo {
   margin: 20px 24px 2px 24px;
 }
 
-.portfolio-projects-list-type {
+.portfolio-projects__list--type {
   width: 322px;
   font-weight: 400;
   font-size: 16px;
@@ -819,11 +819,11 @@ footer .logo {
   margin: 2px 24px 20px 24px;
 }
 
-.portfolio-projects-list-photo {
+.portfolio-projects__list--photo {
   overflow: hidden;
 }
 
-.portfolio-projects-overlay {
+.portfolio-projects__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -835,7 +835,7 @@ footer .logo {
   transform: translateY(100%);
 }
 
-.portfolio-projects-overlay-text {
+.portfolio-projects__overlay--text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
@@ -844,7 +844,7 @@ footer .logo {
   padding: 49px 45px 49px 24px;
 }
 
-.portfolio-projects-list-item:hover .portfolio-projects-overlay {
+.portfolio-projects__list--item:hover .portfolio-projects__overlay {
   opacity: 0.9;
   transform: translateY(0);
 }
