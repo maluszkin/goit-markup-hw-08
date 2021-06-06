@@ -1,18 +1,18 @@
 .team {
     background-color: var(--bg2-color);
   }
-  .team-list {
+  .team__list {
     display: flex;
     justify-content: space-between;
   }
-  .team-list-item {
+  .team__list--item {
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
   }
-  .team-list-name {
+  .team__list--name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
@@ -21,7 +21,7 @@
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  .team-list-description {
+  .team__list--description {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.188;
@@ -30,14 +30,14 @@
     color: var(--secondary-color);
     margin-bottom: 16px;
   }
-  .team-social-list {
+  .team__social--list {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 32px;
     margin-right: 32px;
   }
-  .team-social-list-link {
+  .team__social--list-link {
     display: flex;
     height: 44px;
     width: 44px;
@@ -48,8 +48,8 @@
     fill: #afb1b8;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .team-social-list-link:hover,
-  .team-social-list-link:focus {
+  .team__social--list-link:hover,
+  .team__social--list-link:focus {
     background-color: var(--hover-color);
     fill: #ffffff;
   }

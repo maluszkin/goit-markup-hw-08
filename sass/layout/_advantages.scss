@@ -1,12 +1,12 @@
-.atuty {
+.advs {
     background-color: var(--bg1-color);
     padding-bottom: 0px;
   }
-  .atuty-list {
+  .advs__list {
     display: flex;
     justify-content: space-between;
   }
-  .atuty-list-item {
+  .advs__list--item {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -15,18 +15,18 @@
     width: 270px;
     margin-bottom: 10px;
   }
-  .atuty-icon-space {
+  .advs__icon--space {
     background-color: var(--bg2-color);
     display: flex;
     padding: 25px 100px 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
   }
-  .atuty-icon {
+  .advs__icon {
     width: 70px;
     height: 70px;
   }
-  .atuty-list-description {
+  .advs__list--description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.714;
