@@ -35,3 +35,18 @@
       }
     }
   }
+  @media screen and (min-width: 480px) {
+    .about{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .about{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .about{
+      display: flex;
+    }
+  }
