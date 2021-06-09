@@ -924,11 +924,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .team__list--item:not(:nth-child(n+3):nth-last-child(n+3)) {
+  .team__list--item:nth-child(3) {
     margin-bottom: 0px;
-  }
-  .team__list--item {
-    margin-right: 0px;
   }
   .team__social--list {
     margin-left: 74px;
@@ -940,6 +937,12 @@ body {
   .team__list {
     display: flex;
     justify-content: space-between;
+  }
+  .team__list--item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .team__list--item {
+    margin-bottom: 0px;
   }
   .team__social--list {
     margin-left: 32px;

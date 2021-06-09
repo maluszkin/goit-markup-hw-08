@@ -80,13 +80,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
 
-      &--item:not(:nth-child(n+3):nth-last-child(n+3)) {
+      &--item:nth-child(3) {
         margin-bottom: 0px;
       }
 
-      &--item {
-        margin-right: 0px;
-      }
     }
     .team__social--list {
       margin-left: 74px;
@@ -99,6 +96,13 @@
       display: flex;
       justify-content: space-between;
 
+      &--item:not(:last-child) {
+        margin-bottom: 0px;
+      }
+      
+      &--item {
+        margin-bottom: 0px;
+      }
 
     }
     .team__social--list {
